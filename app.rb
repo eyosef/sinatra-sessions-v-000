@@ -20,7 +20,7 @@ class App < Sinatra::Base
   end
 
   get '/set' do
-    
+
     session[:foo] = 'hello'
 
     if session[:foo] == 'hello'

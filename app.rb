@@ -20,6 +20,9 @@ class App < Sinatra::Base
 
   get '/set' do
     # set the :foo key of the session hash equal to 'hello' here!
+    In the route: get '/set', write a line of code that sets the :foo key of the session hash equal to 'hello'.
+    \nThen, naviate to the '/set' path."
+
     if session[:foo] == 'hello'
       redirect '/fetch'
     else
